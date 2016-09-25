@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "babel src -d dist",
-    "prepublish": "npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/spatie/npm-install-peers#readme",
   "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0",
     "eslint": "^1.7.2"
   },
   "dependencies": {
-    "npm": "^3.3.9"
+    "npm": "^3.3.9",
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
   }
 }
